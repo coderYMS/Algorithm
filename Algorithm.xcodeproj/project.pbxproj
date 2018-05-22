@@ -15,6 +15,8 @@
 		C097347F20B3CFAE009381F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C097347E20B3CFAE009381F1 /* main.m */; };
 		C097348920B3CFAE009381F1 /* AlgorithmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C097348820B3CFAE009381F1 /* AlgorithmTests.m */; };
 		C097349420B3CFAE009381F1 /* AlgorithmUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C097349320B3CFAE009381F1 /* AlgorithmUITests.m */; };
+		C09734A320B3EE74009381F1 /* BinaryTree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C09734A220B3EE74009381F1 /* BinaryTree.storyboard */; };
+		C09734A620B3EEA7009381F1 /* YMBinaryTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C09734A520B3EEA7009381F1 /* YMBinaryTreeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		C097348F20B3CFAE009381F1 /* AlgorithmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C097349320B3CFAE009381F1 /* AlgorithmUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmUITests.m; sourceTree = "<group>"; };
 		C097349520B3CFAE009381F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C09734A220B3EE74009381F1 /* BinaryTree.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BinaryTree.storyboard; sourceTree = "<group>"; };
+		C09734A420B3EEA7009381F1 /* YMBinaryTreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMBinaryTreeViewController.h; sourceTree = "<group>"; };
+		C09734A520B3EEA7009381F1 /* YMBinaryTreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMBinaryTreeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		C097346E20B3CFAE009381F1 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				C09734A120B3EE5C009381F1 /* 二叉树 */,
 				C097346F20B3CFAE009381F1 /* AppDelegate.h */,
 				C097347020B3CFAE009381F1 /* AppDelegate.m */,
 				C097347220B3CFAE009381F1 /* ViewController.h */,
@@ -130,6 +136,16 @@
 				C097349520B3CFAE009381F1 /* Info.plist */,
 			);
 			path = AlgorithmUITests;
+			sourceTree = "<group>";
+		};
+		C09734A120B3EE5C009381F1 /* 二叉树 */ = {
+			isa = PBXGroup;
+			children = (
+				C09734A220B3EE74009381F1 /* BinaryTree.storyboard */,
+				C09734A420B3EEA7009381F1 /* YMBinaryTreeViewController.h */,
+				C09734A520B3EEA7009381F1 /* YMBinaryTreeViewController.m */,
+			);
+			path = "二叉树";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C097347C20B3CFAE009381F1 /* LaunchScreen.storyboard in Resources */,
+				C09734A320B3EE74009381F1 /* BinaryTree.storyboard in Resources */,
 				C097347920B3CFAE009381F1 /* Assets.xcassets in Resources */,
 				C097347720B3CFAE009381F1 /* Main.storyboard in Resources */,
 			);
@@ -266,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C097347420B3CFAE009381F1 /* ViewController.m in Sources */,
+				C09734A620B3EEA7009381F1 /* YMBinaryTreeViewController.m in Sources */,
 				C097347F20B3CFAE009381F1 /* main.m in Sources */,
 				C097347120B3CFAE009381F1 /* AppDelegate.m in Sources */,
 			);

@@ -11,6 +11,7 @@
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSArray *dataArr;
+@property (nonatomic, strong) NSArray *destinationArr;
 
 @end
 
@@ -32,11 +33,22 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:self.destinationArr[indexPath.row] sender:nil];
+}
+
 - (NSArray *)dataArr {
     if (nil == _dataArr) {
         _dataArr = @[@"二叉树"];
     }
     return _dataArr;
+}
+
+- (NSArray *)destinationArr {
+    if (nil == _destinationArr) {
+        _destinationArr = @[@"YMBinaryTreeViewController"];
+    }
+    return _destinationArr;
 }
 
 @end
